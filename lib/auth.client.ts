@@ -7,8 +7,8 @@ import { createAuthClient } from "better-auth/react";
 const authClient = createAuthClient({
 	baseURL:
 		process.env.NODE_ENV === "development"
-			? "localhost:3000"
-			: "https://hotelier-wine.vercel.app",
+			? "http://localhost:3000"
+			: `https://${process.env.NEXT_PUBLIC_VERCEL_PRODUCTION_URL}`,
 	plugins: [adminClient(), emailOTPClient(), organizationClient()],
 });
 
