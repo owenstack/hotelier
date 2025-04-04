@@ -8,6 +8,7 @@ const Linux = (props: SVGProps<SVGSVGElement>) => (
 		viewBox="0 0 256 295"
 		{...props}
 	>
+		<title>Linux</title>
 		<defs>
 			<linearGradient
 				id="logosLinuxTux0"

@@ -1,15 +1,15 @@
 import {
 	Breadcrumb,
 	BreadcrumbItem,
+	BreadcrumbLink,
 	BreadcrumbList,
 	BreadcrumbPage,
-	BreadcrumbLink,
 	BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import type { Metadata } from "next";
 import { reverseSlug } from "@/lib/constants";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Reports",

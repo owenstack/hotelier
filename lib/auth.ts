@@ -29,7 +29,7 @@ export const auth = betterAuth({
 				return dbUser?.role === "owner";
 			},
 			async sendInvitationEmail(data, request) {
-				const inviteLink = `https://${process.env.VERCEL_URL}/invite/${data.id}`;
+				const inviteLink = `https://${process.env.VERCEL_PRODUCTION_URL}/invite/${data.id}`;
 				sendInviteEmail(
 					data.inviter.user.name,
 					inviteLink,
